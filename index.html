@@ -1,1 +1,843 @@
-<h1>comming soon</h1>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrawal Trading Co. Supplies | Premium Wholesale Packaging & Tea Essentials</title>
+    <meta name="description" content="Agrawal Trading Co. Supplies is India's premium wholesale supply partner for Paper Cups, Disposable Packaging, Eco-friendly boxes, and Tea Essentials.">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            darkGreen: '#0B291B',
+                            mint: '#10B981',
+                            cream: '#F9F6F0',
+                            cardBg: '#FFFFFF',
+                            textDark: '#1F2937',
+                            textLight: '#4B5563',
+                            gold: '#D9A74A'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #F9F6F0;
+            color: #1F2937;
+            font-family: 'Outfit', 'sans-serif';
+        }
+        .page-view {
+            display: none;
+        }
+        .page-view.active {
+            display: block;
+        }
+        .premium-shadow {
+            box-shadow: 0 10px 30px -5px rgba(11, 41, 27, 0.05);
+        }
+        .active-nav-item {
+            background-color: #10B981 !important;
+            color: #FFFFFF !important;
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-brand-textDark selection:bg-brand-mint selection:text-white">
+
+    <!-- GLOBAL LAYOUT CONTAINER -->
+    <div class="min-h-screen flex flex-col lg:flex-row">
+
+        <!-- SIDE NAVIGATION BAR (DESKTOP) -->
+        <aside class="hidden lg:flex flex-col w-72 bg-brand-darkGreen text-white fixed h-full z-40 border-r border-white/10 p-6 justify-between">
+            <div>
+                <!-- Brand Identity -->
+                <a href="#home" onclick="navigateTo('home')" class="flex items-center gap-3 mb-10 group">
+                    <div class="h-10 w-10 rounded-xl bg-brand-mint flex items-center justify-center font-bold text-white text-xl shadow-lg shadow-brand-mint/20">A</div>
+                    <div>
+                        <span class="block font-bold text-base tracking-wide text-white uppercase">Agrawal Trading</span>
+                        <span class="block text-xs font-medium tracking-wider text-brand-mint">Supplies & More</span>
+                    </div>
+                </a>
+
+                <!-- Nav Menu Matrix -->
+                <nav class="space-y-1.5">
+                    <a href="#home" id="btn-nav-home" onclick="navigateTo('home')" class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-white/70 hover:bg-white/5 hover:text-white transition-all"><i class="ph-bold ph-squares-four text-lg"></i> Overview Hub</a>
+                    <a href="#about" id="btn-nav-about" onclick="navigateTo('about')" class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-white/70 hover:bg-white/5 hover:text-white transition-all"><i class="ph-bold ph-buildings text-lg"></i> Our Story</a>
+                    <a href="#products" id="btn-nav-products" onclick="navigateTo('products')" class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-white/70 hover:bg-white/5 hover:text-white transition-all"><i class="ph-bold ph-package text-lg"></i> Products</a>
+                    <a href="#industries" id="btn-nav-industries" onclick="navigateTo('industries')" class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-white/70 hover:bg-white/5 hover:text-white transition-all"><i class="ph-bold ph-storefront text-lg"></i> Industries We Serve</a>
+                    <a href="#partners" id="btn-nav-partners" onclick="navigateTo('partners')" class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-white/70 hover:bg-white/5 hover:text-white transition-all"><i class="ph-bold ph-handshake text-lg"></i> Business Partner</a>
+                    <a href="#vision" id="btn-nav-vision" onclick="navigateTo('vision')" class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-white/70 hover:bg-white/5 hover:text-white transition-all"><i class="ph-bold ph-compass text-lg"></i> Our Future Vision</a>
+                    <a href="#platform" id="btn-nav-platform" onclick="navigateTo('platform')" class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-white/70 hover:bg-white/5 hover:text-white transition-all"><i class="ph-bold ph-monitor-play text-lg"></i> Future App Platform</a>
+                    <a href="#catalogue" id="btn-nav-catalogue" onclick="navigateTo('catalogue')" class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-white/70 hover:bg-white/5 hover:text-white transition-all"><i class="ph-bold ph-book-open text-lg"></i> Digital Catalogue</a>
+                    <a href="#contact" id="btn-nav-contact" onclick="navigateTo('contact')" class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-white/70 hover:bg-white/5 hover:text-white transition-all"><i class="ph-bold ph-phone text-lg"></i> Contact Us</a>
+                </nav>
+            </div>
+
+            <!-- Footer Meta Tag -->
+            <div class="border-t border-white/10 pt-4 text-center">
+                <span class="text-[11px] font-medium tracking-widest text-brand-mint block mb-1">TAGLINE</span>
+                <p class="text-xs font-serif italic text-white/60">"Built on Trust. Delivered with Consistency."</p>
+            </div>
+        </aside>
+
+        <!-- TOP NAVIGATION BAR (MOBILE ONLY) -->
+        <header class="lg:hidden bg-brand-darkGreen text-white px-4 py-4 flex items-center justify-between sticky top-0 z-50 shadow-md">
+            <a href="#home" onclick="navigateTo('home')" class="flex items-center gap-2">
+                <div class="h-8 w-8 rounded-lg bg-brand-mint flex items-center justify-center font-bold text-white text-base">A</div>
+                <span class="font-bold text-sm uppercase tracking-wide">Agrawal Trading</span>
+            </a>
+            <button onclick="toggleMobileDrawer()" class="p-2 text-2xl text-white focus:outline-none" aria-label="Open Navigation">
+                <i class="ph-bold ph-list" id="mobile-hamburger-icon"></i>
+            </button>
+        </header>
+
+        <!-- MOBILE EXPANDABLE MENU DRAWER -->
+        <div id="mobile-drawer" class="hidden lg:hidden fixed inset-0 z-40 bg-brand-darkGreen text-white p-6 pt-20 flex flex-col gap-3">
+            <a href="#home" onclick="navigateTo('home'); toggleMobileDrawer()" class="text-base font-semibold py-2 border-b border-white/10 block"><i class="ph-bold ph-squares-four mr-2"></i> Overview Hub</a>
+            <a href="#about" onclick="navigateTo('about'); toggleMobileDrawer()" class="text-base font-semibold py-2 border-b border-white/10 block"><i class="ph-bold ph-buildings mr-2"></i> Our Story</a>
+            <a href="#products" onclick="navigateTo('products'); toggleMobileDrawer()" class="text-base font-semibold py-2 border-b border-white/10 block"><i class="ph-bold ph-package mr-2"></i> Products</a>
+            <a href="#industries" onclick="navigateTo('industries'); toggleMobileDrawer()" class="text-base font-semibold py-2 border-b border-white/10 block"><i class="ph-bold ph-storefront mr-2"></i> Industries We Serve</a>
+            <a href="#partners" onclick="navigateTo('partners'); toggleMobileDrawer()" class="text-base font-semibold py-2 border-b border-white/10 block"><i class="ph-bold ph-handshake mr-2"></i> Business Partner</a>
+            <a href="#vision" onclick="navigateTo('vision'); toggleMobileDrawer()" class="text-base font-semibold py-2 border-b border-white/10 block"><i class="ph-bold ph-compass mr-2"></i> Our Future Vision</a>
+            <a href="#platform" onclick="navigateTo('platform'); toggleMobileDrawer()" class="text-base font-semibold py-2 border-b border-white/10 block"><i class="ph-bold ph-monitor-play mr-2"></i> Future App Platform</a>
+            <a href="#catalogue" onclick="navigateTo('catalogue'); toggleMobileDrawer()" class="text-base font-semibold py-2 border-b border-white/10 block"><i class="ph-bold ph-book-open mr-2"></i> Digital Catalogue</a>
+            <a href="#contact" onclick="navigateTo('contact'); toggleMobileDrawer()" class="text-base font-semibold py-2 border-b border-white/10 block"><i class="ph-bold ph-phone mr-2"></i> Contact Us</a>
+        </div>
+
+        <!-- MAIN MAIN DISPLAY ROUTER -->
+        <main class="flex-1 lg:ml-72 min-w-0">
+
+            <!-- ===================================== -->
+            <!-- 1. HOME HUB (THE MASTER COMPREHENSIVE VIEW) -->
+            <!-- ===================================== -->
+            <section id="page-home" class="page-view active">
+                
+                <!-- Modern Hero Banner -->
+                <div class="relative bg-brand-darkGreen text-white py-20 lg:py-32 px-6 lg:px-16 overflow-hidden rounded-b-[2rem] lg:rounded-b-[3rem] shadow-xl">
+                    <div class="absolute inset-0 opacity-5">
+                        <div class="absolute inset-0 bg-[radial-gradient(#10B981_1px,transparent_1px)] [background-size:24px_24px]"></div>
+                    </div>
+                    <div class="max-w-4xl mx-auto text-center relative z-10">
+                        <span class="inline-flex bg-brand-mint/20 border border-brand-mint text-brand-mint text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">India's Smart Wholesale Supply Platform</span>
+                        <h1 class="font-serif text-4xl lg:text-6xl font-bold text-white leading-tight">
+                            Building Reliable Supply Networks for <span class="text-brand-mint italic font-normal">Everyday Businesses</span>
+                        </h1>
+                        <p class="mt-6 text-white/80 text-base lg:text-lg max-w-2xl mx-auto font-normal leading-relaxed">
+                            We supply premium paper cups, disposable packaging, eco-friendly boxes, and top-quality tea essentials. Safe deliveries, best wholesale prices, and no tension of running out of stock!
+                        </p>
+                        <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+                            <a href="#products" onclick="navigateTo('products')" class="w-full sm:w-auto bg-brand-mint hover:bg-brand-mint/90 text-white text-sm font-bold uppercase tracking-wider px-8 py-4 rounded-xl transition-all shadow-lg shadow-brand-mint/20 text-center">View Products Catalogue</a>
+                            <a href="#partners" onclick="navigateTo('partners')" class="w-full sm:w-auto border border-white/30 text-white hover:bg-white/10 text-sm font-bold uppercase tracking-wider px-8 py-4 rounded-xl transition-all text-center">Become a Business Partner</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trust Metrics Strip -->
+                <div class="max-w-7xl mx-auto px-6 mt-[-2rem] relative z-20">
+                    <div class="bg-white rounded-2xl premium-shadow border border-brand-darkGreen/5 p-6 grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+                        <div class="p-2 border-r border-gray-100 last:border-0">
+                            <p class="text-xl lg:text-2xl font-bold text-brand-darkGreen">100% On-Time</p>
+                            <p class="text-xs text-brand-textLight font-medium uppercase mt-1">Reliable Supply</p>
+                        </div>
+                        <div class="p-2 border-r border-gray-100 last:border-0">
+                            <p class="text-xl lg:text-2xl font-bold text-brand-darkGreen">Always Ready</p>
+                            <p class="text-xs text-brand-textLight font-medium uppercase mt-1">Stock Availability</p>
+                        </div>
+                        <div class="p-2 border-r border-gray-100 last:border-0">
+                            <p class="text-xl lg:text-2xl font-bold text-brand-darkGreen">Best Wholesale</p>
+                            <p class="text-xs text-brand-textLight font-medium uppercase mt-1">Guaranteed Rates</p>
+                        </div>
+                        <div class="p-2 border-r border-gray-100 last:border-0">
+                            <p class="text-xl lg:text-2xl font-bold text-brand-darkGreen">Long-Term</p>
+                            <p class="text-xs text-brand-textLight font-medium uppercase mt-1">Credit Support</p>
+                        </div>
+                        <div class="p-2 last:border-0 col-span-2 md:col-span-1">
+                            <p class="text-xl lg:text-2xl font-bold text-brand-mint">Future Ready</p>
+                            <p class="text-xs text-brand-textLight font-medium uppercase mt-1">App Ordering</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2: About Story Preview -->
+                <div class="py-16 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-5">
+                        <span class="text-brand-mint text-xs font-bold uppercase tracking-widest block mb-1">Who We Are</span>
+                        <h2 class="font-serif text-3xl lg:text-4xl font-bold text-brand-darkGreen">Built on Trust.<br>Delivered with Consistency.</h2>
+                        <p class="text-brand-textLight text-sm leading-relaxed mt-4">
+                            Agrawal Trading Co. Supplies is India’s fast-growing wholesale distribution network. We don't just sell packaging products; we help small tea stalls, fast food joints, cafes, and resellers manage their stock smoothly without any day-to-day hassles.
+                        </p>
+                        <a href="#about" onclick="navigateTo('about')" class="inline-flex items-center gap-2 mt-4 text-sm font-bold text-brand-mint hover:text-brand-darkGreen transition-colors">
+                            Read Our Full Story <i class="ph-bold ph-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="p-5 bg-white border border-gray-100 rounded-2xl premium-shadow">
+                            <h4 class="font-serif text-base font-bold text-brand-darkGreen">Our Identity</h4>
+                            <p class="text-xs text-brand-textLight mt-2">A trusted packaging partner for thousands of retail shops and bulk buyers.</p>
+                        </div>
+                        <div class="p-5 bg-white border border-gray-100 rounded-2xl premium-shadow">
+                            <h4 class="font-serif text-base font-bold text-brand-darkGreen">Our Action</h4>
+                            <p class="text-xs text-brand-textLight mt-2">We deliver high-quality paper cups, food containers, and tea essentials daily.</p>
+                        </div>
+                        <div class="p-5 bg-white border border-gray-100 rounded-2xl premium-shadow">
+                            <h4 class="font-serif text-base font-bold text-brand-darkGreen">Our Purpose</h4>
+                            <p class="text-xs text-brand-textLight mt-2">To save local business owners from stock running out and high prices.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3: Product Categories Preview -->
+                <div class="bg-brand-darkGreen text-white py-16 px-6 rounded-t-[2rem] lg:rounded-t-[3rem]">
+                    <div class="max-w-7xl mx-auto">
+                        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+                            <div>
+                                <span class="text-brand-mint text-xs font-bold uppercase tracking-widest block mb-1">Our Catalog</span>
+                                <h2 class="font-serif text-3xl lg:text-4xl font-bold">Premium Core Products</h2>
+                            </div>
+                            <a href="#products" onclick="navigateTo('products')" class="text-xs uppercase tracking-wider font-bold text-brand-mint hover:text-white transition-colors mt-2 md:mt-0">See All Products Catalog &rarr;</a>
+                        </div>
+
+                        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                            <div class="bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-brand-mint transition-all group">
+                                <div class="text-brand-mint text-3xl mb-3"><i class="ph-fill ph-cup"></i></div>
+                                <h3 class="font-serif text-lg font-bold text-white group-hover:text-brand-mint transition-colors">Paper Cups</h3>
+                                <p class="text-xs text-white/60 mt-1">Leak-proof single/double wall cups for hot tea & cold drinks.</p>
+                            </div>
+                            <div class="bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-brand-mint transition-all group">
+                                <div class="text-brand-mint text-3xl mb-3"><i class="ph-fill ph-tray"></i></div>
+                                <h3 class="font-serif text-lg font-bold text-white group-hover:text-brand-mint transition-colors">Disposables</h3>
+                                <p class="text-xs text-white/60 mt-1">High-quality plastic containers, silver plates, and premium spoons.</p>
+                            </div>
+                            <div class="bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-brand-mint transition-all group">
+                                <div class="text-brand-mint text-3xl mb-3"><i class="ph-fill ph-leaf"></i></div>
+                                <h3 class="font-serif text-lg font-bold text-white group-hover:text-brand-mint transition-colors">Eco Packaging</h3>
+                                <p class="text-xs text-white/60 mt-1">100% biodegradable plates and boxes made from natural sugarcane bagasse.</p>
+                            </div>
+                            <div class="bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-brand-mint transition-all group">
+                                <div class="text-brand-mint text-3xl mb-3"><i class="ph-fill ph-box text-brand-mint"></i></div>
+                                <h3 class="font-serif text-lg font-bold text-white group-hover:text-brand-mint transition-colors">Custom Printing</h3>
+                                <p class="text-xs text-white/60 mt-1">Get your own brand logo printed beautifully on cups and boxes.</p>
+                            </div>
+                            <div class="bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-brand-mint transition-all group">
+                                <div class="text-brand-mint text-3xl mb-3"><i class="ph-fill ph-coffee"></i></div>
+                                <h3 class="font-serif text-lg font-bold text-white group-hover:text-brand-mint transition-colors">Tea Essentials</h3>
+                                <p class="text-xs text-white/60 mt-1">Premium strong Assam CTC tea leaves for fast-moving hotel boilers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4: Industries We Serve Preview -->
+                <div class="py-16 max-w-7xl mx-auto px-6">
+                    <div class="text-center max-w-xl mx-auto mb-10">
+                        <span class="text-brand-mint text-xs font-bold uppercase tracking-widest block mb-1">Who We Help</span>
+                        <h2 class="font-serif text-3xl font-bold text-brand-darkGreen">One Supply Partner for Every Business Type</h2>
+                    </div>
+
+                    <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                        <div class="p-4 bg-white border border-gray-100 rounded-xl text-center hover:shadow-md transition-all">
+                            <i class="ph-fill ph-storefront text-2xl text-brand-mint mb-2 block mx-auto"></i>
+                            <span class="text-xs font-semibold text-brand-textDark">Tea Stalls / Hotels</span>
+                        </div>
+                        <div class="p-4 bg-white border border-gray-100 rounded-xl text-center hover:shadow-md transition-all">
+                            <i class="ph-fill ph-cooking-pot text-2xl text-brand-mint mb-2 block mx-auto"></i>
+                            <span class="text-xs font-semibold text-brand-textDark">Fast Food Joints</span>
+                        </div>
+                        <div class="p-4 bg-white border border-gray-100 rounded-xl text-center hover:shadow-md transition-all">
+                            <i class="ph-fill ph-coffee text-2xl text-brand-mint mb-2 block mx-auto"></i>
+                            <span class="text-xs font-semibold text-brand-textDark">Modern Cafes</span>
+                        </div>
+                        <div class="p-4 bg-white border border-gray-100 rounded-xl text-center hover:shadow-md transition-all">
+                            <i class="ph-fill ph-fork-knife text-2xl text-brand-mint mb-2 block mx-auto"></i>
+                            <span class="text-xs font-semibold text-brand-textDark">Restaurants</span>
+                        </div>
+                        <div class="p-4 bg-white border border-gray-100 rounded-xl text-center hover:shadow-md transition-all">
+                            <i class="ph-fill ph-truck text-2xl text-brand-mint mb-2 block mx-auto"></i>
+                            <span class="text-xs font-semibold text-brand-textDark">Caterers</span>
+                        </div>
+                        <div class="p-4 bg-white border border-gray-100 rounded-xl text-center hover:shadow-md transition-all">
+                            <i class="ph-fill ph-shopping-bag text-2xl text-brand-mint mb-2 block mx-auto"></i>
+                            <span class="text-xs font-semibold text-brand-textDark">Retail Stores</span>
+                        </div>
+                        <div class="p-4 bg-white border border-gray-100 rounded-xl text-center hover:shadow-md transition-all">
+                            <i class="ph-fill ph-buildings text-2xl text-brand-mint mb-2 block mx-auto"></i>
+                            <span class="text-xs font-semibold text-brand-textDark">Wholesalers</span>
+                        </div>
+                        <div class="p-4 bg-white border border-gray-100 rounded-xl text-center hover:shadow-md transition-all">
+                            <i class="ph-fill ph-users-four text-2xl text-brand-mint mb-2 block mx-auto"></i>
+                            <span class="text-xs font-semibold text-brand-textDark">Resellers</span>
+                        </div>
+                        <div class="p-4 bg-white border border-gray-100 rounded-xl text-center hover:shadow-md transition-all">
+                            <i class="ph-fill ph-sparkles text-2xl text-brand-mint mb-2 block mx-auto"></i>
+                            <span class="text-xs font-semibold text-brand-textDark">Pooja Material Shops</span>
+                        </div>
+                        <div class="p-4 bg-white border border-gray-100 rounded-xl text-center hover:shadow-md transition-all">
+                            <i class="ph-fill ph-briefcase text-2xl text-brand-mint mb-2 block mx-auto"></i>
+                            <span class="text-xs font-semibold text-brand-textDark">Local Businesses</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 5: Why Choose Us Preview -->
+                <div class="bg-gray-100 py-16 px-6 border-t border-b border-gray-200/50">
+                    <div class="max-w-7xl mx-auto">
+                        <div class="text-center max-w-xl mx-auto mb-10">
+                            <span class="text-brand-mint text-xs font-bold uppercase tracking-widest block mb-1">Our Benefits</span>
+                            <h2 class="font-serif text-3xl font-bold text-brand-darkGreen">Kyu Chune Agrawal Trading Co.?</h2>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="flex gap-3 bg-white p-5 rounded-2xl premium-shadow">
+                                <div class="text-brand-mint text-xl"><i class="ph-bold ph-check-circle-fill"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-brand-textDark">Zyaada Margin Profit</h4>
+                                    <p class="text-xs text-brand-textLight mt-1">Direct factory rates se aapka procurement kharcha kam hota hai aur munafa badhta hai.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3 bg-white p-5 rounded-2xl premium-shadow">
+                                <div class="text-brand-mint text-xl"><i class="ph-bold ph-check-circle-fill"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-brand-textDark">Ek Single Partner</h4>
+                                    <p class="text-xs text-brand-textLight mt-1">Paper cup se lekar eco box aur chai patti tak, sab kuch ek he jagha mil jayega.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3 bg-white p-5 rounded-2xl premium-shadow">
+                                <div class="text-brand-mint text-xl"><i class="ph-bold ph-check-circle-fill"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-brand-textDark">Har Batch Top Quality</h4>
+                                    <p class="text-xs text-brand-textLight mt-1">Sahi size, heavy thickness aur bina leak hone wali badhiya quality ki poori guarantee.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 6: Vision Preview -->
+                <div class="py-16 max-w-7xl mx-auto px-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-4">
+                            <span class="text-brand-mint text-xs font-bold uppercase tracking-widest block mb-1">Our Roadmap</span>
+                            <h2 class="font-serif text-3xl font-bold text-brand-darkGreen">Aasan Aur Digital Wholesale Marketplace</h2>
+                            <p class="text-xs text-brand-textLight mt-2">Hum sirf traditional vyapaar nahi kar rahe, balki digital technology ke sath poore supply chain ko asaan bana rahe hain.</p>
+                            <a href="#vision" onclick="navigateTo('vision')" class="bg-brand-darkGreen text-white text-xs font-bold tracking-wider uppercase px-6 py-3 rounded-xl inline-block mt-4 text-center">See Full Roadmap</a>
+                        </div>
+                        <div class="lg:col-span-8 border-l-2 border-brand-mint/40 pl-6 space-y-6">
+                            <div>
+                                <span class="text-xs font-bold text-brand-mint uppercase block">Aaj &mdash; Best Physical Supply</span>
+                                <p class="text-xs text-brand-textLight">Har samay stock availability aur fast door-step delivery network.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-brand-mint uppercase block">Kal &mdash; Digital Tech App</span>
+                                <p class="text-xs text-brand-textLight">Aapke mobile se aasan order booking system, live order tracking aur digital bill ledger.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 7: Future Platform Preview -->
+                <div class="bg-brand-darkGreen text-white py-16 px-6">
+                    <div class="max-w-7xl mx-auto">
+                        <div class="text-center max-w-xl mx-auto mb-10">
+                            <span class="text-brand-mint text-xs font-bold uppercase tracking-widest block mb-1">Digital App Layout</span>
+                            <h2 class="font-serif text-3xl font-bold">Future Business App Preview</h2>
+                            <p class="text-xs text-white/70 mt-2">Aane wala smart dashboard jo aapke dukan ka har supply order manage karega.</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-xs">
+                            <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+                                <h4 class="text-brand-mint font-bold uppercase mb-2">● Retailer App</h4>
+                                <div class="space-y-1 text-white/70">
+                                    <p>Live Order: En Route (2 Hrs)</p>
+                                    <p>Credit Balance: ₹50,000</p>
+                                </div>
+                            </div>
+                            <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+                                <h4 class="text-brand-mint font-bold uppercase mb-2">● Logistics Tracker</h4>
+                                <div class="space-y-1 text-white/70">
+                                    <p>Active Vans: 12 Out for Delivery</p>
+                                    <p>Fulfillment: 100% On Time</p>
+                                </div>
+                            </div>
+                            <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+                                <h4 class="text-brand-mint font-bold uppercase mb-2">● Admin Control</h4>
+                                <div class="space-y-1 text-white/70">
+                                    <p>Stock Health: Full & Safe</p>
+                                    <p>Total Items Active: 5 Lakh+ Units</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 8: Business Partnership Preview -->
+                <div class="py-16 max-w-7xl mx-auto px-6 text-center">
+                    <span class="text-brand-mint text-xs font-bold uppercase tracking-widest block mb-1">Grow With Us</span>
+                    <h2 class="font-serif text-3xl font-bold text-brand-darkGreen">Start Your Business Partnership</h2>
+                    <p class="text-brand-textLight text-sm max-w-xl mx-auto mt-2">Wholesale distributors, local resellers, and bulk hotel buyers ke liye sabse behtar mauka.</p>
+                    <div class="mt-6">
+                        <a href="#partners" onclick="navigateTo('partners')" class="bg-brand-mint hover:bg-brand-mint/90 text-white text-xs font-bold uppercase tracking-wider px-8 py-3.5 rounded-xl inline-block shadow-lg">Become a Partner Now</a>
+                    </div>
+                </div>
+
+                <!-- Section 9: Testimonials Section -->
+                <div class="bg-gray-100 py-16 px-6">
+                    <div class="max-w-7xl mx-auto">
+                        <div class="text-center max-w-xl mx-auto mb-10">
+                            <span class="text-brand-mint text-xs font-bold uppercase tracking-widest block mb-1">Customer Reviews</span>
+                            <h2 class="font-serif text-3xl font-bold text-brand-darkGreen">Kya Kehte Hain Hamare Business Partners?</h2>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="p-6 bg-white rounded-2xl border border-gray-100 premium-shadow">
+                                <p class="text-xs text-brand-textLight italic">"Agrawal Trading ke sath judne ke baad hamare cafe chain ka cup supply hamesha tight rehta hai. Inki paper quality behtareen h, kabhi customer se leak ki shikayat nhi aayi."</p>
+                                <div class="mt-4 border-t border-gray-100 pt-3">
+                                    <h5 class="text-xs font-bold text-brand-textDark">Rajesh Sharma</h5>
+                                    <p class="text-[10px] text-brand-textLight uppercase tracking-wider">Owner, Mumbai Tea House Chain</p>
+                                </div>
+                            </div>
+                            <div class="p-6 bg-white rounded-2xl border border-gray-100 premium-shadow">
+                                <p class="text-xs text-brand-textLight italic">"Wholesale business mein sabse important price aur stock backup hota hai. Inke paas har samay stock ready rehta hai, delivery bhi time par dukan tak pahuch jati hai."</p>
+                                <div class="mt-4 border-t border-gray-100 pt-3">
+                                    <h5 class="text-xs font-bold text-brand-textDark">Manoj Patel</h5>
+                                    <p class="text-[10px] text-brand-textLight uppercase tracking-wider">Bulk Distributor, Surat Junction</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Final CTA Banner -->
+                <div class="bg-brand-darkGreen text-white py-16 text-center rounded-t-[2rem]">
+                    <h2 class="font-serif text-3xl font-bold">Ready to Secure Your Supply Chain?</h2>
+                    <p class="text-xs text-white/70 max-w-md mx-auto mt-2">Dukan ka stock running out hone ka tension khatam kariye. Aaj he humse baate karein.</p>
+                    <div class="mt-6 flex flex-col sm:flex-row justify-center gap-3 px-6">
+                        <a href="#contact" onclick="navigateTo('contact')" class="bg-brand-mint text-white text-xs font-bold uppercase tracking-wider px-6 py-3 rounded-xl hover:bg-brand-mint/90">Contact Us Now</a>
+                        <a href="https://wa.me/919876543210" target="_blank" class="border border-white/20 text-white text-xs font-bold uppercase tracking-wider px-6 py-3 rounded-xl bg-white/5"><i class="ph-bold ph-whatsapp-logo mr-1 text-emerald-400"></i> Direct WhatsApp Chat</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ===================================== -->
+            <!-- 2. ABOUT US PAGE -->
+            <!-- ===================================== -->
+            <section id="page-about" class="page-view py-12 px-6 max-w-4xl mx-auto space-y-10">
+                <div class="text-center">
+                    <span class="text-brand-mint text-xs font-bold uppercase tracking-widest block mb-1">Hamari Kahani</span>
+                    <h1 class="font-serif text-3xl lg:text-4xl font-bold text-brand-darkGreen">About Agrawal Trading Co.</h1>
+                </div>
+
+                <div>
+                    <h3 class="font-serif text-xl font-bold text-brand-darkGreen mb-2">Hamari Shuruat Aur Aim</h3>
+                    <p class="text-xs text-brand-textLight leading-relaxed">
+                        Agrawal Trading Co. Supplies ki shuruat ek asaan maqsad ke sath hui thi: Bharat ke local vyapariyon ko sahi wholesale price par high-quality packaging material mil sake. Pehle dukanon ko baar-baar stock khatam hone ka darr rehta tha, aur market mein rates roz badalte the. Humne is samasya ko door kiya aur ek aisa reliable system banaya jahan har dukan ko unka maal bina kisi rukaawat ke daily mil sake.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-white p-6 rounded-2xl border border-gray-100 premium-shadow">
+                    <div>
+                        <h4 class="font-bold text-brand-darkGreen text-sm">Hamara Mission</h4>
+                        <p class="text-xs text-brand-textLight mt-1">Har ek retailer aur bulk partner tak sabse sasta, mazboot aur reliable packaging stock pahuchega bina kisi fail ke.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-brand-darkGreen text-sm">Hamara Vision</h4>
+                        <p class="text-xs text-brand-textLight mt-1">Ek aisi mobile app aur modern technology supply network banana, jahan bas ek click par dukan ka poora wholesale business manage ho sake.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-serif text-xl font-bold text-brand-darkGreen mb-2">Hamare Corporate Values</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-center text-xs">
+                        <div class="p-3 bg-white rounded-xl border border-gray-100"><strong class="text-brand-darkGreen block">Trust (Bharosa)</strong> Zero hidden charges, saaf vyapaar.</div>
+                        <div class="p-3 bg-white rounded-xl border border-gray-100"><strong class="text-brand-darkGreen block">Quality (Sahi Maal)</strong> No compromise on leak proof finish.</div>
+                        <div class="p-3 bg-white rounded-xl border border-gray-100"><strong class="text-brand-darkGreen block">Support (Hamesha Sath)</strong> Easy credit limits and direct connection.</div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ===================================== -->
+            <!-- 3. PRODUCTS PAGE -->
+            <!-- ===================================== -->
+            <section id="page-products" class="page-view py-12 px-6 max-w-5xl mx-auto space-y-8">
+                <div class="text-center">
+                    <span class="text-brand-mint text-xs font-bold uppercase tracking-widest block mb-1">Our Category Matrix</span>
+                    <h1 class="font-serif text-3xl font-bold text-brand-darkGreen">Wholesale Product Catalogue</h1>
+                </div>
+
+                <!-- Product Box 1 -->
+                <div class="bg-white border border-gray-100 rounded-2xl p-6 premium-shadow grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                    <div class="md:col-span-4">
+                        <div class="text-brand-mint text-3xl mb-1"><i class="ph-fill ph-cup"></i></div>
+                        <h3 class="font-serif text-xl font-bold text-brand-darkGreen">Premium Paper Cups</h3>
+                        <p class="text-xs text-brand-textLight mt-1">Premium virgin paper se bane leak-proof cups jo garam chai aur coffee ke liye ekdum perfect hain.</p>
+                    </div>
+                    <div class="md:col-span-8 bg-brand-cream p-4 rounded-xl space-y-2 text-xs">
+                        <p><strong>Available Sizes:</strong> 55ml, 65ml, 80ml, 110ml, 150ml, 250ml</p>
+                        <p><strong>Perfect For:</strong> Local Chai Hotels, Cafe Outlets, Corporate Offices</p>
+                    </div>
+                </div>
+
+                <!-- Product Box 2 -->
+                <div class="bg-white border border-gray-100 rounded-2xl p-6 premium-shadow grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                    <div class="md:col-span-4">
+                        <div class="text-brand-mint text-3xl mb-1"><i class="ph-fill ph-tray"></i></div>
+                        <h3 class="font-serif text-xl font-bold text-brand-darkGreen">Disposable Products</h3>
+                        <p class="text-xs text-brand-textLight mt-1">Food-grade delivery packaging containers, safe plates, forks, spoons aur wrapping sheets.</p>
+                    </div>
+                    <div class="md:col-span-8 bg-brand-cream p-4 rounded-xl space-y-2 text-xs">
+                        <p><strong>Available Options:</strong> Plastic Storage Containers, Silver Plates, Heavy Plastic Cutlery</p>
+                        <p><strong>Perfect For:</strong> Chinese Outlets, Fast Food Shops, Food Caterers</p>
+                    </div>
+                </div>
+
+                <!-- Product Box 3 -->
+                <div class="bg-white border border-gray-100 rounded-2xl p-6 premium-shadow grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                    <div class="md:col-span-4">
+                        <div class="text-brand-mint text-3xl mb-1"><i class="ph-fill ph-leaf"></i></div>
+                        <h3 class="font-serif text-xl font-bold text-brand-darkGreen">Eco Packaging Boxes</h3>
+                        <p class="text-xs text-brand-textLight mt-1">100% compostable and organic bagasse plates aur boxes jo prakriti ke liye bilkul safe hain.</p>
+                    </div>
+                    <div class="md:col-span-8 bg-brand-cream p-4 rounded-xl space-y-2 text-xs">
+                        <p><strong>Available Options:</strong> Sugarcane Bagasse Plates, Kraft Paper Lunch Boxes, Eco Bowls</p>
+                        <p><strong>Perfect For:</strong> Premium Food Brands, Eco-conscious Cafes, Restaurants</p>
+                    </div>
+                </div>
+
+                <!-- Product Box 4 -->
+                <div class="bg-white border border-gray-100 rounded-2xl p-6 premium-shadow grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                    <div class="md:col-span-4">
+                        <div class="text-brand-mint text-3xl mb-1"><i class="ph-fill ph-coffee"></i></div>
+                        <h3 class="font-serif text-xl font-bold text-brand-darkGreen">Strong Assam Tea leaves</h3>
+                        <p class="text-xs text-brand-textLight mt-1">Aroma aur heavy color dene wali badhiya high-yield CTC chai patti, jo hotel boilers ke liye khas bani h.</p>
+                    </div>
+                    <div class="md:col-span-8 bg-brand-cream p-4 rounded-xl space-y-2 text-xs">
+                        <p><strong>Available Options:</strong> Bulk Grade Tea Packs, Fine Mesh Cotton Cloth Filters</p>
+                        <p><strong>Perfect For:</strong> High Volume Roadside Tea Kiosks, Tapris, Sweet Shops</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ===================================== -->
+            <!-- 4. INDUSTRIES WE SERVE PAGE -->
+            <!-- ===================================== -->
+            <section id="page-industries" class="page-view py-12 px-6 max-w-5xl mx-auto space-y-6">
+                <div class="text-center mb-8">
+                    <span class="text-brand-mint text-xs font-bold uppercase tracking-widest block mb-1">Target Sectors</span>
+                    <h1 class="font-serif text-3xl font-bold text-brand-darkGreen">Hum Kiske Liye Kaam Karte Hain?</h1>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                    <div class="p-5 bg-white rounded-2xl border border-gray-100 premium-shadow">
+                        <h4 class="font-bold text-brand-darkGreen text-sm mb-1">01 // Tea Tapris / Hotels</h4>
+                        <p class="text-brand-textLight">Rozana hazaaron cups lagte hain. Hum har subah aapki dukan khulne se pehle stock pahuchate hain taaki customer khali hath na jaye.</p>
+                    </div>
+                    <div class="p-5 bg-white rounded-2xl border border-gray-100 premium-shadow">
+                        <h4 class="font-bold text-brand-darkGreen text-sm mb-1">02 // Fast Food Outlets</h4>
+                        <p class="text-brand-textLight">Leak proof plastic containers aur foil packaging material ka bulk stock milta hai sabse saste wholesale price par.</p>
+                    </div>
+                    <div class="p-5 bg-white rounded-2xl border border-gray-100 premium-shadow">
+                        <h4 class="font-bold text-brand-darkGreen text-sm mb-1">03 // Modern Cafes</h4>
+                        <p class="text-brand-textLight">Double wall matte finish cups aur high fidelity custom printed boxes jo aapke brand image ko match karte hain.</p>
+                    </div>
+                    <div class="p-5 bg-white rounded-2xl border border-gray-100 premium-shadow">
+                        <h4 class="font-bold text-brand-darkGreen text-sm mb-1">04 // Caterers & Events</h4>
+                        <p class="text-brand-textLight">Shaadi ya party ke liye bulk plates, eco bagasse containers aur premium cutlery ka instant urgent supply service backup.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ===================================== -->
+            <!-- 5. BUSINESS PARTNERS PAGE -->
+            <!-- ===================================== -->
+            <section id="page-partners" class="page-view py-12 px-6 max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <div class="lg:col-span-5 space-y-4">
+                    <h2 class="font-serif text-2xl lg:text-3xl font-bold text-brand-darkGreen">Business Partner Banein Aur Apni Kamai Badhayein</h2>
+                    <p class="text-xs text-brand-textLight leading-relaxed">
+                        Hum local retailers, wholesale resellers aur state wise distributors ke sath long-term deal karte hain. Agrawal Trading ke sath judne par aapko secure fixed credit facility, safe supply lines aur special seasonal discounts milenge.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-7 bg-white border border-gray-100 p-6 rounded-2xl premium-shadow">
+                    <h4 class="font-serif text-lg font-bold text-brand-darkGreen mb-4">Partner Application Form</h4>
+                    <form onsubmit="event.preventDefault(); alert('Aapki details safe register ho gayi hain. Team jaldi call karegi.');" class="space-y-4 text-xs">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-bold text-brand-textDark mb-1">Dukan / Company Ka Naam</label>
+                                <input type="text" required class="w-full p-3 border border-gray-200 bg-brand-cream rounded-xl focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block font-bold text-brand-textDark mb-1">GST Number (Optional)</label>
+                                <input type="text" class="w-full p-3 border border-gray-200 bg-brand-cream rounded-xl focus:outline-none">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block font-bold text-brand-textDark mb-1">Aapkis Type Ka Partner Banana Chahte Hain?</label>
+                            <select class="w-full p-3 border border-gray-200 bg-brand-cream rounded-xl focus:outline-none">
+                                <option>Retailer Store Owner</option>
+                                <option>Wholesale Bulk Distributor</option>
+                                <option>Local Reseller Agent</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block font-bold text-brand-textDark mb-1">Aapka Pura Address / Area</label>
+                            <input type="text" required class="w-full p-3 border border-gray-200 bg-brand-cream rounded-xl focus:outline-none">
+                        </div>
+                        <button type="submit" class="w-full bg-brand-mint text-white text-xs font-bold uppercase tracking-wider py-3.5 rounded-xl hover:bg-brand-mint/90 transition-all">Submit Details</button>
+                    </form>
+                </div>
+            </section>
+
+
+            <!-- ===================================== -->
+            <!-- 6. OUR VISION PAGE -->
+            <!-- ===================================== -->
+            <section id="page-vision" class="page-view py-12 px-6 max-w-4xl mx-auto text-center space-y-6">
+                <span class="text-brand-mint text-xs font-bold uppercase tracking-widest block">Futuristic View</span>
+                <h1 class="font-serif text-3xl font-bold text-brand-darkGreen">Humara Future Vision</h1>
+                <p class="text-xs text-brand-textLight max-w-xl mx-auto">Hum pure Bharat ke small scale food business operators ko ek majboot digital layer se jodna chahte hain taaki har dukan dar digital tools ka upayog kar sake.</p>
+
+                <div class="space-y-4 text-left max-w-2xl mx-auto mt-6">
+                    <div class="bg-white p-4 rounded-xl border border-gray-100 premium-shadow">
+                        <h5 class="font-bold text-brand-mint text-sm">Step 1: Pan-India Storage Hubs</h5>
+                        <p class="text-xs text-brand-textLight mt-0.5">Har city mein bade warehouse points setup karna taaki city ke andar sirf 2 ghante mein product deliver ho sake.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-gray-100 premium-shadow">
+                        <h5 class="font-bold text-brand-mint text-sm">Step 2: AI Order Stock Management</h5>
+                        <p class="text-xs text-brand-textLight mt-0.5">Aisi tech system jo dukan ke purane sales data ko dekh kar unka stock automatically re-order kar degi, bina unke bataye.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ===================================== -->
+            <!-- 7. FUTURE PLATFORM PAGE -->
+            <!-- ===================================== -->
+            <section id="page-platform" class="page-view py-12 px-6 max-w-4xl mx-auto space-y-8">
+                <div class="text-center">
+                    <h1 class="font-serif text-3xl font-bold text-brand-darkGreen">Agrawal OS & Business Mobile App</h1>
+                    <p class="text-xs text-brand-textLight mt-1">Ek simple digital wholesale application jisse dukan chalana hoga bilkul easy aur automatic.</p>
+                </div>
+
+                <div class="bg-brand-darkGreen text-white p-6 rounded-2xl border border-brand-mint/20 space-y-4 font-mono text-xs shadow-xl">
+                    <div class="border-b border-white/10 pb-3 flex justify-between">
+                        <span class="text-brand-mint font-bold">// SMART MOBILE APP MODULES</span>
+                        <span class="text-emerald-400">STATUS: DESIGN PHASE READY</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 bg-white/5 rounded-xl border border-white/5">
+                            <h5 class="text-brand-mint font-bold uppercase text-xs mb-1">1. Customer Wallet Profile</h5>
+                            <p class="text-white/70 text-[11px]">Apne sare purane bills checkout karein, online cash payments clear karein aur credit limit score check karein.</p>
+                        </div>
+                        <div class="p-4 bg-white/5 rounded-xl border border-white/5">
+                            <h5 class="text-brand-mint font-bold uppercase text-xs mb-1">2. Live Dispatch Tracker</h5>
+                            <p class="text-white/70 text-[11px]">Delivery van abhi kis location par hai aur aapki dukan tak kitne baje tak maal pahuchega, live dekein.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ===================================== -->
+            <!-- 8. CATALOGUE PAGE -->
+            <!-- ===================================== -->
+            <section id="page-catalogue" class="page-view py-12 px-6 max-w-5xl mx-auto space-y-6">
+                <div class="text-center">
+                    <h1 class="font-serif text-3xl font-bold text-brand-darkGreen">Digital Sourcing Hub</h1>
+                    <p class="text-xs text-brand-textLight mt-1">Niche diye gaye products mein se jo chahiye, direct select karke check out karein.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="bg-white border border-gray-100 p-4 rounded-xl flex flex-col justify-between premium-shadow">
+                        <div>
+                            <span class="text-[10px] font-mono text-brand-mint font-bold block mb-1">CODE: PC-65ML</span>
+                            <h4 class="font-serif text-base font-bold text-brand-textDark">65ml Regular Paper Cup</h4>
+                            <p class="text-xs text-brand-textLight mt-1">Chai tapri aur local hotels mein roz chalne wala normal size single-wall heavy model.</p>
+                        </div>
+                        <button onclick="requestSpecificQuote('65ml Regular Paper Cup')" class="w-full mt-4 bg-brand-darkGreen text-white hover:bg-brand-mint text-xs font-bold py-2 rounded-xl transition-all">Check Wholesale Price</button>
+                    </div>
+
+                    <div class="bg-white border border-gray-100 p-4 rounded-xl flex flex-col justify-between premium-shadow">
+                        <div>
+                            <span class="text-[10px] font-mono text-brand-mint font-bold block mb-1">CODE: PC-110ML</span>
+                            <h4 class="font-serif text-base font-bold text-brand-textDark">110ml Double Wall Cup</h4>
+                            <p class="text-xs text-brand-textLight mt-1">Thick layered model jisme bahar garam nahi lagta, premium cafes ke liye perfect.</p>
+                        </div>
+                        <button onclick="requestSpecificQuote('110ml Double Wall Cup')" class="w-full mt-4 bg-brand-darkGreen text-white hover:bg-brand-mint text-xs font-bold py-2 rounded-xl transition-all">Check Wholesale Price</button>
+                    </div>
+
+                    <div class="bg-white border border-gray-100 p-4 rounded-xl flex flex-col justify-between premium-shadow">
+                        <div>
+                            <span class="text-[10px] font-mono text-brand-mint font-bold block mb-1">CODE: BG-PL-03</span>
+                            <h4 class="font-serif text-base font-bold text-brand-textDark">3-Partition Eco Plate</h4>
+                            <p class="text-xs text-brand-textLight mt-1">Natural sugarcane plate, lunch and thali delivery packaging ke liye ideal product.</p>
+                        </div>
+                        <button onclick="requestSpecificQuote('3-Partition Eco Plate')" class="w-full mt-4 bg-brand-darkGreen text-white hover:bg-brand-mint text-xs font-bold py-2 rounded-xl transition-all">Check Wholesale Price</button>
+                    </div>
+
+                    <div class="bg-white border border-gray-100 p-4 rounded-xl flex flex-col justify-between premium-shadow">
+                        <div>
+                            <span class="text-[10px] font-mono text-brand-mint font-bold block mb-1">CODE: TE-ASSAM-01</span>
+                            <h4 class="font-serif text-base font-bold text-brand-textDark">Assam Bulk CTC Tea</h4>
+                            <p class="text-xs text-brand-textLight mt-1">Kadak aur swadist chai patti ka heavy packing, jo jyada balti chai banane ke kaam aati h.</p>
+                        </div>
+                        <button onclick="requestSpecificQuote('Assam Bulk CTC Tea')" class="w-full mt-4 bg-brand-darkGreen text-white hover:bg-brand-mint text-xs font-bold py-2 rounded-xl transition-all">Check Wholesale Price</button>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ===================================== -->
+            <!-- 9. CONTACT PAGE -->
+            <!-- ===================================== -->
+            <section id="page-contact" class="page-view py-12 px-6 max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <div class="lg:col-span-4 space-y-4">
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl premium-shadow">
+                        <h4 class="font-serif text-base font-bold text-brand-darkGreen border-b border-gray-100 pb-2 mb-2">Our Main Office</h4>
+                        <p class="text-xs text-brand-textLight leading-relaxed">
+                            Agrawal Trading Co. Supplies<br>
+                            Main Hub Complex, Gate No. 3, Near Industrial Estate,<br>
+                            Mumbai Grid Corridor, India.
+                        </p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl premium-shadow text-xs space-y-1.5 text-brand-textLight">
+                        <p><strong>Phone Line:</strong> +91 98765 43210</p>
+                        <p><strong>Email Address:</strong> orders@agrawaltrading.co</p>
+                        <p><strong>Timing:</strong> 09:00 AM - 08:00 PM (Sunday Closed)</p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-8 bg-white border border-gray-100 p-6 rounded-2xl premium-shadow">
+                    <h4 class="font-serif text-lg font-bold text-brand-darkGreen mb-4">Send Quick Inquiry Message</h4>
+                    <form onsubmit="event.preventDefault(); alert('Message successfully sent to our dispatch panel.');" class="space-y-4 text-xs">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-bold text-brand-textDark mb-1">Aapka Naam</label>
+                                <input type="text" required class="w-full p-3 border border-gray-200 bg-brand-cream rounded-xl focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block font-bold text-brand-textDark mb-1">Mobile Number</label>
+                                <input type="tel" required class="w-full p-3 border border-gray-200 bg-brand-cream rounded-xl focus:outline-none">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block font-bold text-brand-textDark mb-1">Aapko Kis Product Ki Detail Chahiye?</label>
+                            <textarea rows="4" required id="contact-custom-message" class="w-full p-3 border border-gray-200 bg-brand-cream rounded-xl focus:outline-none" placeholder="Write item name, requirements, or size details here..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-darkGreen text-white text-xs font-bold uppercase tracking-wider py-3.5 rounded-xl hover:bg-brand-mint transition-all">Send Message to Team</button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- PERSISTENT WHATSAPP CONNECT ACTION FLOATER BUTTON -->
+    <a href="https://wa.me/919876543210" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-105 transition-transform duration-200" aria-label="WhatsApp Connect Link Nodes">
+        <i class="ph-bold ph-whatsapp-logo text-3xl"></i>
+    </a>
+
+
+    <!-- CORE RE-ROUTING ENGINE SCRIPT LAYER -->
+    <script>
+        /**
+         * Page Component View Manager
+         */
+        function navigateTo(targetPageId) {
+            // Hide all structural template sections
+            const sections = document.querySelectorAll('.page-view');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Display active view container
+            const currentSection = document.getElementById('page-' + targetPageId);
+            if (currentSection) {
+                currentSection.classList.add('active');
+            }
+
+            // Reset highlighted status elements in navigation bar sidebar array
+            const sidebarLinks = document.querySelectorAll('aside nav a');
+            sidebarLinks.forEach(link => {
+                link.classList.remove('active-nav-item');
+            });
+
+            // Set background active state color to the currently selected view element button
+            const activeDesktopBtn = document.getElementById('btn-nav-' + targetPageId);
+            if (activeDesktopBtn) {
+                activeDesktopBtn.classList.add('active-nav-item');
+            }
+
+            // Immediately adjust focus offset viewport window layout coordinate index back to standard baseline zero
+            window.scrollTo({ top: 0, behavior: 'instant' });
+        }
+
+        /**
+         * Mobile Nav Overlay Layout Menu Management Drawer Toggle Matrix
+         */
+        function toggleMobileDrawer() {
+            const containerNode = document.getElementById('mobile-drawer');
+            const toggleIconElement = document.getElementById('mobile-hamburger-icon');
+            
+            if (containerNode.classList.contains('hidden')) {
+                containerNode.classList.remove('hidden');
+                toggleIconElement.classList.remove('ph-list');
+                toggleIconElement.classList.add('ph-x');
+            } else {
+                containerNode.classList.add('hidden');
+                toggleIconElement.classList.remove('ph-x');
+                toggleIconElement.classList.add('ph-list');
+            }
+        }
+
+        /**
+         * Direct Intercept Product Parametric Transfer Broker Agent Logic
+         */
+        function requestSpecificQuote(productLabelName) {
+            navigateTo('contact');
+            const targetTextInputBox = document.getElementById('contact-custom-message');
+            if (targetTextInputBox) {
+                targetTextInputBox.value = `Namaste Agrawal Trading Team, Mujhe [${productLabelName}] ka wholesale price rate-list chahiye bulk purchase order ke liye. Please sample details aur minimal order quantity (MOQ) share karein.`;
+                targetTextInputBox.focus();
+            }
+        }
+
+        // Handle dynamic page structural loading layers automatically based on clean uniform window document hash values
+        window.addEventListener('DOMContentLoaded', () => {
+            const pathUrlHashToken = window.location.hash ? window.location.hash.substring(1) : 'home';
+            const establishedSecureRoutes = ['home', 'about', 'products', 'industries', 'partners', 'vision', 'platform', 'catalogue', 'contact'];
+            if (establishedSecureRoutes.includes(pathUrlHashToken)) {
+                navigateTo(pathUrlHashToken);
+            } else {
+                navigateTo('home');
+            }
+        });
+
+        // Register tracking intercept monitor layers to handle sequential window document state updates gracefully
+        window.addEventListener('hashchange', () => {
+            const updatedStatePathHashToken = window.location.hash ? window.location.hash.substring(1) : 'home';
+            navigateTo(updatedStatePathHashToken);
+        });
+    </script>
+</body>
+</html>
